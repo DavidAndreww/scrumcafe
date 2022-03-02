@@ -18,6 +18,10 @@ const Menu = ({ handleAdd, checkingOut }) => {
 			const currItem = updatedItems[index]
 			const toppingIdx = currItem.toppings.findIndex(topping => topping.value === e.target.value)
 			currItem.toppings[toppingIdx]['included'] = e.target.checked
+			//handle variant ID 
+			// adds/removes currValue according to 'included'
+			const inactiveToppings = currItem.toppings.filter(item)
+			//handle variant ID 
 			updatedItems.splice(index, 1, currItem)
 			setMenuItems(updatedItems)
 		}

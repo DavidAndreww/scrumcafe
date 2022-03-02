@@ -12,6 +12,7 @@ router.post("/", function (req, res, next) {
 	const items = req.body;
 	setTimeout(() => {
 		db.set("orders", { items }).write();
+		console.log(JSON.stringify(db, null, 4))
 		res.end();
 	}, 3000);
 });

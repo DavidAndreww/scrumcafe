@@ -12,6 +12,10 @@ const Styled = {
 		font-weight: bold;
 	`,
 	Description: styled(Row)``,
+	Toppings: styled(Row)`
+		font-style: italic;
+		margin-top: 10px;
+	`
 };
 
 export default Styled;

@@ -8,9 +8,6 @@ const Item = ({ item, onClick, disabled }) => {
 		<Row>
 			<Col>
 				<Row>{item.name}</Row>
-				{item.toppings.filter(topping => topping.included === true).map(topping => (
-					<Styled.Topping key={topping.value}>{topping.label}</Styled.Topping>
-				))}
 			</Col>
 			<Col sm="auto">Qty - {item.qty}</Col>
 			<Col sm="auto">

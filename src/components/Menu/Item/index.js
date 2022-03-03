@@ -7,7 +7,7 @@ import Styled from "./styles";
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-const Item = ({ item, onClick, disabled, handleChange, id }) => {
+const Item = ({ item, onClick, disabled, toppingToggle, id }) => {
 	
 	return (
 		<Styled.MenuItem>
@@ -20,7 +20,7 @@ const Item = ({ item, onClick, disabled, handleChange, id }) => {
 						<Form.Check.Input 
 							value={item.value} 
 							checked={item.included} 
-							onChange={(e)=> handleChange(id, e)}
+							onChange={(e)=> toppingToggle(id, e)}
 						/> 
 						<Form.Check.Label>{item.label}</Form.Check.Label><br />
 						</Form.Group>

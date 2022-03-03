@@ -13,8 +13,16 @@ function App() {
 	const [checkingOut, setCheckingOut] = useState(false);
 	const [complete, setComplete] = useState(false);
 
+
+	const calculateId = (arr) => {
+		return arr.reduce((accu, curr, idx) => {
+	    return curr.included == false ? accu.concat(curr.value) : accu
+		}, '')
+	}
+
 	const handleAdd = (menuItem) => {
 		const updatedCart = [...cart];
+		menuItem.id = calculateId(menuItem.toppings)
 		const index = cart.findIndex((cartItem) => cartItem.id === menuItem.id);
 		if (index >= 0) {
 			const cartItem = updatedCart[index];

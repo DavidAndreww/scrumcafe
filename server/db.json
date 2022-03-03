@@ -65,14 +65,14 @@
   "orders": {
     "items": [
       {
-        "id": 1,
+        "id": "cherryTomatocarrots",
         "name": "Garden salad (300 cal)",
         "description": "Cherry tomatoes, cucumber slices, and julienne carrots on a bed of mixed greens with a light poppy seed dressing.",
         "toppings": [
           {
             "value": "cherryTomato",
             "label": "Cherry tomatoes",
-            "included": true
+            "included": false
           },
           {
             "value": "cucumber",
@@ -82,29 +82,11 @@
           {
             "value": "carrots",
             "label": "Carrots",
-            "included": true
+            "included": false
           },
           {
             "value": "dressing",
             "label": "Dressing",
-            "included": true
-          }
-        ],
-        "qty": 2
-      },
-      {
-        "id": 3,
-        "name": "Hummus with pita chips (350 cal)",
-        "description": "Garlic roasted hummus served with lightly salted pita chips.",
-        "toppings": [
-          {
-            "value": "hummus",
-            "label": "Hummus",
-            "included": true
-          },
-          {
-            "value": "chips",
-            "label": "Pita Chips",
             "included": true
           }
         ],

@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 import Item from "./Item";
 
 const ShoppingCart = ({ cart, handleCheckout, handleDelete, checkingOut }) => {
-	console.log(cart)
+	
 	return (
 		<Col sm={4}>
 			<Row>
